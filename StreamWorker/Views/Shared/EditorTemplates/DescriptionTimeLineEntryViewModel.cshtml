@@ -1,0 +1,8 @@
+﻿@model StreamWorker.ViewModels.Task.DescriptionTimeLineEntryViewModel
+<div class="row">
+    <div class="col">
+        @Html.HiddenFor(model => model.ConcreteModelType)
+        @Html.LabelFor(model => model.Description)
+        @Html.EditorFor(model => model.Description, new {htmlAttributes = new {@class = "form-control form-control-danger"}})
+    </div>
+</div>
